@@ -1,0 +1,247 @@
+/* 1rem = 1em = 16px  */
+
+/* below 1344px small co,puters */
+@media(max-width: 1344px){
+    .hero{
+        max-width: 1200px;
+    }
+
+    .heading-primary{
+        font-size: 44px;
+    }
+    .tests-img{
+        grid-template-columns: repeat(2, 1fr);
+        }
+    .header{
+        gap: 300px;
+        
+    }
+    .nav1{
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 56.25%;
+    }
+    .meals2{
+        gap: 70px;
+    }
+    .header{
+        padding: 0 32px;
+    }
+    .hero{
+        gap: 48px;
+    }
+    .main-nav-list{
+        gap: 32px;
+    }
+}
+
+
+@media(max-width:944px){
+    html{
+        font-size: 50%
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        padding: 0 80px;
+    }
+    .hero-img{
+        width: 60%;
+    }
+    .hero-text-box, .hero-img-box{
+        text-align: center;
+    }
+    .delivered-meals{
+        justify-content: center;
+        margin-top: 32px;
+    }
+    .nav1{
+        padding: 11px 22px;
+        background-color: #e67e22;
+        color: white;
+    }
+    .forbes-img{
+        gap: 30px;
+    }
+    .forbes-img img{
+        width: 170px;
+        height: 30px;
+    }
+    .step-img{
+        width: 190px;
+        height: 380px;
+    }
+    .container1{
+        gap: 105px;
+        padding: 70px 40px 40px 150px;
+        font-size: 50%;
+    }
+    .step-text-box h1{
+        font-size: 60px;
+    }
+    .tests{
+        display: block;
+    }
+    .tests-img{
+        grid-template-columns: repeat(6, 1fr);
+        }
+        .firstmeal{
+           grid-template-columns: 3fr 2fr; 
+        }
+
+    form{
+        grid-template-columns: 1fr;
+    }
+    .Meals{
+        padding: 0 0px 0 50px;
+    }
+
+    .btn-mobile-nav{
+        display: block;
+        z-index: 9999;
+    }
+
+    .main-nav{
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.9;
+        transition: all 0.5s;
+        transform: translateX(100%);
+
+     
+    } 
+
+    .nav-open .main-nav{
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+        visibility: visible;
+    }
+    .nav-open .fa-xmark{
+        display: none;
+    }
+    .nav-open .fa-bars{
+        display: block;
+    }
+    
+
+     .main-nav-list{
+        flex-direction: column;
+        gap: 48px;
+        text-align: center;
+        align-items: center;
+    }
+    .main-nav-list li a:link,
+.main-nav-list li a:visited{
+    font-size: 30px;
+} 
+
+    }
+
+    @media(max-width:704px){
+        .meals2{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .local{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .works{
+            grid-column: 1 / -1;
+            justify-self: center;
+            margin-bottom: 10px;
+        }
+        .starter_cont{
+            width: 100%;
+            gap: 5px;
+        }
+        footer{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .twitter{
+            grid-row: 1;
+            font-size: 18px;
+        }
+        .twitter1{
+            grid-row: 4;
+        }
+        .container1{
+            display: block;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .step-img{
+            margin-top: 20px;
+        }
+    
+        .btn{
+            padding: 24px 16px;
+        }
+        .forbes-img img{
+            height: 18px;
+        }
+        /* .step-img-box:nth-child(2){
+            grid-row: 1 ;
+        }
+        .step-img-box:nth-child(6){
+            grid-row: 5;
+        }
+        .step-img-box{
+            transform: translateY(24px);
+        /* } */
+    }
+
+
+    @media(max-width:544px){
+        .meals2{
+            grid-template-columns: 1fr;
+        }
+        .local{
+            grid-template-columns: 1fr;
+        }
+        .starter_cont{
+            flex-direction: column;
+            gap: 60px;
+        }
+        .tests-text1{
+            grid-template-columns: 1fr;
+        }
+        .container1{
+            margin-right: 20px;
+        }
+        .hero{
+            padding: 0 32px;
+        }
+        .section-hero{
+            padding: 24px 0 64px 0;
+        }
+        .hero-img{
+            width: 80%;
+        }
+        .tests-img{
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+        .firstmeal{
+            grid-template-columns: 1fr;
+        }
+        .firstimg{
+            height: 360px;
+            grid-row: 1;
+        }
+        .firsttext{
+            padding: 32px;
+        }
+        
+    }
